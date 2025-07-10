@@ -1,21 +1,9 @@
-export default function HomePage() {
-  const books = [
-    { id: 1, title: "The Book of Sand", author: "Jorge Luis Borges", year: 1975 },
-    { id: 2, title: "Ficciones", author: "Jorge Luis Borges", year: 1944 },
-  ];
-
-  const filteredBooks = books.filter((book) => book.year > 1950);
-
+export default function Home() {
   return (
-    <div>
-      <h1>Books</h1>
-      <ul>
-        {filteredBooks.map((book) => (
-          <li key={book.id} style={{ marginBottom: '1rem' }}>
-            <strong>{book.title}</strong> by {book.author} ({book.year})
-          </li>
-        ))}
-      </ul>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <h1 className="text-4xl font-bold text-blue-600">
+        Tailwind CSS is working! 🎉
+      </h1>
     </div>
   );
 }
